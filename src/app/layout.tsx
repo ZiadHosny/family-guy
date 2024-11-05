@@ -15,6 +15,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="manifest"
+          href="https://progressier.app/nfShfP7qUp7pjUzVGWRW/progressier.json"
+        />
+        <script
+          defer
+          src="https://progressier.app/nfShfP7qUp7pjUzVGWRW/script.js"
+        ></script>
+      </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         <Navigation />
         {children}
