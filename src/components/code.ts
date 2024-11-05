@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const registerUser = async () => {
   if (
     navigator.credentials &&
@@ -25,7 +26,7 @@ export const registerUser = async () => {
       },
     } as any;
 
-    const credential = await navigator.credentials.create({ publicKey });
+    await navigator.credentials.create({ publicKey });
     // Send `credential` to your server to save it
     // WebAuthn is supported
   } else {
@@ -46,6 +47,6 @@ export const authenticateUser = async () => {
     userVerification: "required",
   } as any;
 
-  const assertion = await navigator.credentials.get({ publicKey });
+  await navigator.credentials.get({ publicKey });
   // Send `assertion` to your server for verification
 };

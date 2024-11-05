@@ -4,11 +4,11 @@ Renders a navigation component with a sticky header, containing a logo and a lin
 @returns {JSX.Element} The rendered navigation component.
 */
 
-import Link from 'next/link'
-import { Container } from '.'
-import Image from 'next/image'
-import { TbArrowBigRightFilled } from 'react-icons/tb'
-import BiometricAuth from '@/Ui'
+import Link from "next/link";
+import { Container } from ".";
+import Image from "next/image";
+import { TbArrowBigRightFilled } from "react-icons/tb";
+import BiometricAuth from "./Ui";
 
 export const Navigation = () => {
   return (
@@ -28,5 +28,5 @@ export const Navigation = () => {
         </Link>
       </Container>
     </div>
-  )
-}
+  );
+};
